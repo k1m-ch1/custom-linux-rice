@@ -1,0 +1,270 @@
+@import "mocha.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "JetBrainsMono Nerd Font Mono";
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: rgba(0,0,0, 0);
+    /*
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+    */
+}
+/*
+window#waybar.hidden {
+    opacity: 0.2;
+}
+*/
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+*/
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    /*box-shadow: inset 0 -3px transparent;*/
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 5;
+    font-weight: bold;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+
+/*
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}
+*/
+
+/* 
+you can set a style on hover for any module like this 
+#pulseaudio:hover {
+    background-color: #a37800;
+}
+*/
+
+
+#workspaces button {
+    color: @base;
+}
+
+#workspaces button label {
+    padding: 0px 8px;
+    color: @text;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+#workspaces button:hover label {
+  /*
+  color: @base;
+  background-color: @subtext1;
+  */
+
+}
+
+#workspaces button.focused label, #workspaces button.active label {
+  color: @base;
+  background-color: @subtext1;
+  box-shadow: inset 0 -3px @text;
+}
+
+#workspaces button.urgent label {
+    background-color: @red;
+}
+
+/*
+#mode {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+*/
+
+.module {
+  padding: 10px;
+  font-weight: bold;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+#clock {
+  color: @lavender
+}
+
+#battery {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#battery.charging, #battery.plugged {
+    color: #ffffff;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+  color: @mauve;
+}
+
+#memory {
+  color: @pink;
+}
+
+#disk {
+    color: @rosewater;
+}
+
+#backlight {
+    background-color: #90b1b1;
+}
+
+#network {
+  color: @green;
+}
+
+#network.disconnected {
+  color: @red;
+}
+
+#pulseaudio {
+    color: @yellow;
+}
+
+/*
+#pulseaudio.muted {
+    color: @yellow;
+}
+
+#wireplumber {
+    background-color: #fff0f5;
+    color: #000000;
+}
+
+#wireplumber.muted {
+    background-color: #f53c3c;
+}
+*/
+
+#temperature {
+    color: @sky;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#tray {
+  color: @text;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#idle_inhibitor {
+    color: @text;
+}
+
+#idle_inhibitor.activated {
+    color: @base;
+    background-color: @subtext1
+}
+
+#mpd {
+  color: @green;
+}
+
+#mpd.disconnected {
+  color: @maroon;
+}
+
+/*
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+}
+*/
+
+#language {
+    color: @blue;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #000000;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#privacy {
+    padding: 0;
+}
+
+#privacy-item {
+    padding: 0 5px;
+    color: white;
+}
+
+#privacy-item.screenshare {
+    background-color: #cf5700;
+}
+
+#privacy-item.audio-in {
+    background-color: #1ca000;
+}
+
+#privacy-item.audio-out {
+    background-color: #0069d4;
+}
