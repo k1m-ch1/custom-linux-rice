@@ -26,12 +26,13 @@
   mantle: #181825;
   crust: #11111b;
 
-  highlight: @sky;
+  highlight: @flamingo;
 }
 
 #window {
-    border: 2px 0px 0px;
+    /*border: 2px 0px 0px;*/
     border: 0;
+    border-radius: 5px;
     padding: 16px;
     width: 20%;
     height: 50%;
@@ -84,7 +85,7 @@
 
 #element {
     border: 0;
-    padding: 10px 0px 10px 0px;
+    padding: 15px 0px 15px 0px;
     border-color: @surface0;
 }
 
@@ -93,7 +94,7 @@
     text-color:       inherit;
     horizontal-align: 0.5;
     vertical-align: 0.5;
-
+    padding: 2px 20px;
 }
 
 #element.normal.normal {

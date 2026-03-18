@@ -2,6 +2,8 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
+    
+    min-height: 0;
     font-family: "JetBrainsMono Nerd Font Mono";
     font-size: 14px;
 }
@@ -70,18 +72,14 @@ you can set a style on hover for any module like this
 }
 
 #workspaces button label {
-    padding: 0px 8px;
+    padding: 0px 7px;
     color: @text;
     background-color: transparent;
     border-radius: 15px;
 }
 
 #workspaces button:hover label {
-  /*
-  color: @base;
-  background-color: @subtext1;
-  */
-
+  background-color: @surface0;
 }
 
 #workspaces button.focused label, #workspaces button.active label {
@@ -102,7 +100,7 @@ you can set a style on hover for any module like this
 */
 
 .module {
-  padding: 10px;
+  padding: 6px 8px;
   font-weight: bold;
 }
 
@@ -145,6 +143,7 @@ label:focus {
 }
 
 #disk {
+    margin: 4px 0px 0px 0px;
     color: @rosewater;
 }
 

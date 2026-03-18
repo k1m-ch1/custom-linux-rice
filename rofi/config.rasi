@@ -1,8 +1,7 @@
 configuration {
-  show: "drun";
   modes: "drun,run,power-menu:rofi-power-menu";
 	show-icons: true;
-  font: "JetBrainsMono Nerd Font Bold 14";
+  font: "JetBrainsMono Nerd Font Bold 12";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/

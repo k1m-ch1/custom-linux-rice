@@ -20,7 +20,6 @@
     ],
     "modules-right": [
         "network",
-        "keyboard-state",
         "hyprland/language",
         "clock",
         "tray"
@@ -43,7 +42,7 @@
     //     }
     // },
     "keyboard-state": {
-        "numlock": true,
+        "numlock": false,
         "capslock": true,
         "format": "{name} {icon}",
         "format-icons": {
@@ -76,31 +75,38 @@
     },
     "disk": {
       "interval": 10,
-      "format": " 🖬 {used} / {total}",
+      "format": "🖬  {used} / {free} ({percentage_used}%)",
+      "on-click": "pcmanfm"
     },
     "cpu": {
-        "format": " {usage}%",
-        "tooltip": false
+        "interval": 1,
+        "format": " {avg_frequency}Hz ({usage}%) {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+        "on-click": "kitty btop",
+        "tooltip": true
     },
     "memory": {
-        "format": " {used} / {total} GiB"
+        "format": " {used} / {total} GiB (SW: {swapUsed} GiB)",
+        "tooltip-format": "Memory: {used} / {total} GiB ({percentage}%)\n Swap: {swapUsed} / {swapTotal} GiB ({swapPercentage}%)",
+        "on-click": "kitty btop"
     },
     "temperature": {
         // "thermal-zone": 2,
-        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
+        "on-click": "kitty btop",
         "format-icons": ["", "", ""]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": " {essid} ({signalStrength}%)",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-ethernet": "󰈀 {ipaddr}/{cidr}",
+        "tooltip-format": " {ifname} via {gwaddr}",
+        "format-linked": " {ifname} (No IP)",
         "format-disconnected": "󰖪 Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": " {ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -140,7 +146,6 @@
         "idle_inhibitor",
         "pulseaudio",
         "network",
-        "keyboard-state",
         "hyprland/language",
         "clock",
         "tray"
@@ -165,7 +170,7 @@
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
-        "format": "{name} {icon}",
+        "format": "{icon}",
         "format-icons": {
             "locked": "",
             "unlocked": ""
@@ -221,11 +226,11 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": " {essid} ({signalStrength}%)",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-ethernet": "󰈀 {ipaddr}/{cidr}",
+        "tooltip-format": " {ifname} via {gwaddr}",
+        "format-linked": " {ifname} (No IP)",
         "format-disconnected": "󰖪 Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": " {ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
