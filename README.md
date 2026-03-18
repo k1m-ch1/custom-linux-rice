@@ -1,3 +1,7 @@
+# Screenshots
+
+<img width="3841" height="1080" alt="desktop_screenshot" src="https://github.com/user-attachments/assets/45045cc5-c589-49d1-94ab-f05df58635df" />
+
 # Software Used
 
 ## Core desktop stuff
