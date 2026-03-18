@@ -1,0 +1,149 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "source": "linux",
+    "type":"builtin",
+    "height": 5,
+    "width": 10,
+    "padding":{
+      "top": 10,
+      "left":10 
+    }
+  },
+  "modules": [
+    "title",
+    "break",
+    {
+        "type": "custom",
+        "format": "──────────  Software ──────────"
+    },
+    "break",
+    {
+      "type": "os",
+      "key": "⏺ OS",
+      "keyColor": "red"
+    },
+    {
+      "type": "kernel",
+      "key": "⏺ Kernel",
+      "keyColor": "green"
+    },
+    {
+      "type": "shell",
+      "key": "⏺ Shell",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "terminal",
+      "key": "⏺ Terminal",
+      "keyColor": "blue"
+    },
+        {
+      "type": "packages",
+      "key": "⏺ Packages",
+      "keyColor": "magenta"
+    },
+    "break",
+    {
+        "type": "custom",
+        "format": "────────── 🖳  Hardware ──────────"
+    },
+    "break",
+    {
+      "type": "host",
+      "key": "⏺ PC",
+      "keyColor": "red"
+    },
+        {
+      "type": "display",
+      "key": "⏺ Monitor ({name})",
+      "keyColor": "green"
+    },
+        {
+      "type": "cpu",
+      "key": "⏺ CPU",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "gpu",
+      "key": "⏺ GPU",
+      "keyColor": "blue"
+    },    {
+      "type": "memory",
+      "key": "⏺ RAM",
+      "keyColor": "magenta"
+    },    
+    {
+      "type": "swap",
+      "key": "⏺ Swap",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "disk",
+      "key": "⏺ Disk ({mountpoint})",
+      "keyColor": "white"
+    },
+        /*
+    {
+      "type": "publicip",
+      "key": "⏺ Public IP",
+      "keyColor": "red"
+    },
+    */
+    "break",
+    {
+        "type": "custom",
+        "format": "──────────  Graphics ──────────"
+    },
+    "break",
+    {
+      "type": "wm",
+      "key": "⏺ WM",
+      "keyColor": "red"
+    },
+    {
+      "type": "terminalfont",
+      "key": "⏺ Terminal Font",
+      "keyColor": "green"
+    },
+    "break",
+    {
+        "type": "custom",
+        "format": "──────────  Misc ──────────"
+    },
+    "break",
+
+    {
+      "type": "uptime",
+      "key": "⏺ Uptime",
+      "keyColor": "red"
+    },
+    {
+      "type": "music",
+      "key": "⏺ Music",
+      "keyColor": "green"
+    },
+    {
+      "type": "locale",
+      "key": "⏺ Locale",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "localip",
+      "key": "⏺ Local IP",
+      "keyColor": "blue"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "───────────────────────────"
+
+    },
+    "break",
+    {
+      "type": "colors",
+      "paddingLeft": 6,
+      "symbol":"circle"
+    },
+  ]
+}
