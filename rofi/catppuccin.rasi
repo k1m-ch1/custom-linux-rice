@@ -85,7 +85,7 @@
 
 #element {
     border: 0;
-    padding: 15px 0px 15px 0px;
+    padding: 15px 10px 15px 10px;
     border-color: @surface0;
 }
 
@@ -94,7 +94,6 @@
     text-color:       inherit;
     horizontal-align: 0.5;
     vertical-align: 0.5;
-    padding: 2px 20px;
 }
 
 #element.normal.normal {
