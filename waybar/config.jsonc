@@ -68,10 +68,10 @@
     },
     "clock": {
         "interval": 1,
-        "format":" {:%H:%M:%S}",
+        "format":" {:%d-%m-%Y}",
         "timezone": "Asia/Bangkok",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%d-%m-%Y}"
+        "format-alt": " {:%H:%M:%S}"
     },
     "disk": {
       "interval": 10,
