@@ -42,13 +42,13 @@
     //     }
     // },
     "keyboard-state": {
-        "numlock": false,
+        "numlock": true,
         "capslock": true,
-        "format": "{name} {icon}",
+        "format": "{icon}",
         "format-icons": {
             "locked": "",
             "unlocked": ""
-        }
+      }
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -68,11 +68,11 @@
     },
     "clock": {
         "interval": 1,
-        "format":" {:%d-%m-%Y}",
+        "format":" {:%A %d/%m/%Y  %H:%M:%S}",
         "timezone": "Asia/Bangkok",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%H:%M:%S}"
-    },
+        "format-alt": " {:%a %d/%m/%Y  %H:%M}"
+    },    
     "disk": {
       "interval": 10,
       "format": "🖬  {used} / {free} ({percentage_used}%)",
@@ -219,10 +219,10 @@
     },
     "clock": {
         "interval": 1,
-        "format":" {:%H:%M:%S}",
+        "format":" {:%A %d/%m/%Y  %H:%M:%S}",
         "timezone": "Asia/Bangkok",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%d-%m-%Y}"
+        "format-alt": " {:%a %d/%m/%Y  %H:%M}"
     },    
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
